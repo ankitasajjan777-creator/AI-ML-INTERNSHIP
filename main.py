@@ -1,29 +1,21 @@
 
-# methods topics #
 '''
-def add(a,b):
-    return a+b
-print(add(3,4))'''
-
+file = open("example.txt","r")
+print(file.readlines())
 '''
-from Calculation import Calculation
-obj = Calculation()
-print(obj.add(4,5))
-print(obj.product(4,5))
+'''file = open("example2.txt","a")
+file.write("data science and AI/ML")
+file.close()'''
+
+
+'''with open(r"C:\Users\ankit\OneDrive\Desktop\day6 vs\image.png", "rb") as f:
+    image = f.read()
+    print(image)
 '''
-
-'''
- #task1 day5#
-def calc_rectangle(length, width):
-    area = length * width
-    perimeter = 2 * (length + width)
-    return area, perimeter
-
-length = float(input("Enter length: "))
-width = float(input("Enter width: "))
-
-area, perimeter = calc_rectangle(length, width)
-
-print(f"Area: {area}, Perimeter: {perimeter}")
-'''
-
+try:
+    file =open ("sample.txt","r")
+    print(file.read)
+except Exception as e:
+    print("file not found, pls open existing file ")
+finally:
+    file.close1
